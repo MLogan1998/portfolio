@@ -13,5 +13,10 @@ html {
 
 body {
     box-sizing: border-box;
-    background: $primary-blue-dark;
+    background: $primary-grey;
+}
+
+.primaryHeading {
+    color: $primary-green;
+    font-family: 'Montserrat';
 }
