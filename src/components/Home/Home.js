@@ -1,8 +1,13 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
+import { About } from './About';
+import { Logo } from './Logo';
 
 export const Home = (props) => {
   return (
-    <h1>Home</h1>
+    <div className="container">
+    <About />
+    <Logo />
+    </div>
   );
 };
