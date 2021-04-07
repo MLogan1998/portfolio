@@ -10,8 +10,6 @@ export const Logo = () => {
   });
 
   return (
-    <animated.div style={props}>
       <img src="https://i.imgur.com/wrupCN7.png" alt="logo" />
-    </animated.div>
   );
 };

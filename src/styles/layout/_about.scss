@@ -1,0 +1,14 @@
+.link_container {
+  margin-top: 1.5rem;
+  display: flex;
+
+  &--icon {
+    color: $primary-green;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
