@@ -12,3 +12,22 @@
     }
   }
 }
+
+
+.button_container {
+  margin-top: 2rem;
+
+  @include respond(phone) {
+    margin: 3.5rem auto 0 auto;
+  }
+
+  &--button:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &--button {
+    @include respond(phone) {
+      font-size: 1rem !important;
+    }
+  }
+}
