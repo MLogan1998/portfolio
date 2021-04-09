@@ -2,9 +2,25 @@
   color: $primary-green;
   font-weight: bold;
 }
+.white {
+  color: white;
+  font-weight: bold;
+}
 
 .text {
   color: white;
   font-family: 'Montserrat';
   font-size: 1.8rem;
+}
+
+.primary_heading {
+  color: $primary-green;
+  font-family: 'Montserrat';
+  font-size: 5rem;
+  margin: 20px auto 5px auto;
+  letter-spacing: .2rem;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
