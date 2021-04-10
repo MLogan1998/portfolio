@@ -6,6 +6,7 @@ import {
 } from 'react-spring';
 
 import { ContactForm } from './ContactForm';
+import { StaticLogo } from '../Home/StaticLogo';
 
 export const Contact = () => {
   const props = useSpring({
@@ -15,10 +16,13 @@ export const Contact = () => {
   });
 
   return (
-      <animated.div style={props} className="contact">
-        <div className="form_container">
+      <div className="container">
+        <animated.div style={props} className="form_container">
           <ContactForm />
+        </animated.div>
+        <div className="contact-logo">
+          <StaticLogo />
         </div>
-      </animated.div>
+      </div>
   );
 };

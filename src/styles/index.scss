@@ -3,9 +3,11 @@
 
 @import './abstracts/variables';
 @import './abstracts/mixins';
+@import './abstracts/utils';
 
 @import './layout/base';
 @import './layout/home';
 @import './layout/typography';
 @import './layout/about';
 @import './layout/contact';
+@import './layout/tech';

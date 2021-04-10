@@ -1,6 +1,6 @@
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
-import { useTransition, animated, config } from 'react-spring';
+import { useTransition, animated } from 'react-spring';
 
 export const Logo = () => {
   const [items, setItems] = useState([
@@ -24,7 +24,7 @@ export const Logo = () => {
   const transition = useTransition(items, {
     from: { opacity: 0, x: -500 },
     enter: (item) => async (next) => (
-      next({ x: item.x, opacity: 1, delay: item.delay })
+      next({ x: 0, opacity: 1, delay: item.delay })
     ),
   });
 

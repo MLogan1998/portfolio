@@ -18,7 +18,18 @@
 .form {
   background-color: rgba(99, 98, 98, 0.09);
   box-shadow: 0 1rem 1rem rgba(0,0,0, .3);
-  padding: 20px; 
+  padding: 20px;
+  
+
+  &_container {
+    width: 30%;
+    margin-right: 10rem;
+
+    @include respond(phone) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 
   &__group:not(:last-child) {
     margin-bottom: 1.2rem;
@@ -72,3 +83,10 @@
     transform: translateY(-4rem)
   }
 }
+
+
+// .contact-logo {
+//   display: inline;
+//   width: 20%;
+
+// }

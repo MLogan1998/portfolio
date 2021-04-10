@@ -1,0 +1,9 @@
+.noshow {
+  @include respond(phone) {
+    @include noshow
+  }
+}
+
+.bold {
+  font-weight: bold;
+}

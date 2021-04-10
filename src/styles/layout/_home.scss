@@ -7,7 +7,7 @@
   
   @include respond(phone) {
     margin-top: 0;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
     height: 100vh;
   }
 }
