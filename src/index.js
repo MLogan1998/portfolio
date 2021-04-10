@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
 
@@ -15,6 +20,7 @@ ReactDOM.render(
           <Route path="/projects" component={Projects} />
           <Route path="/tech" component={Tech} />
           <Route path="/contact" component={Contact} />
+          <Route render={() => <Redirect to="/" />} />
         </Switch>
   </BrowserRouter>,
   document.getElementById('root'),

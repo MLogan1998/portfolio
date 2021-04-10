@@ -30,7 +30,7 @@ export const ContactForm = () => {
   return (
     <>
     <div className="form_header">
-      <h1 className="primary_heading">Say Hello<span className="white">!</span></h1>
+      <h1 className="cursive_heading">Say Hello<span className="white">!</span></h1>
       <p className="text"><span className="green bold">Thank you</span> for visiting! Contact me with any comments or questions. I'd <span className="green bold">love</span> to hear from you! </p>
     </div>
     <form className="form" onSubmit={handleSubmit}>
