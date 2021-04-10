@@ -7,17 +7,17 @@ export const Logo = () => {
     {
       icon: 'fab fa-linkedin link_container--icon',
       x: 0,
-      delay: 1200,
+      delay: 1000,
     },
     {
       icon: 'fab fa-github-square link_container--icon',
       x: 10,
-      delay: 1000,
+      delay: 800,
     },
     {
       icon: 'fas fa-file-pdf link_container--icon',
       x: 20,
-      delay: 800,
+      delay: 600,
     },
   ]);
 

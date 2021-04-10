@@ -1,29 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import moment from 'moment';
 import githubKey from './githubKey.json';
 
-export const GitHub = () => {
-  const [gitHubData, setGitHubData] = useState([]);
-
-  const getGitHubData = () => (
-    fetch(`${gitHubUrl}`, {
-      headers: {
-        Accept: 'application/json',
-        Authorization: `token ${gitHubToken}`,
-      },
-    })
-      .then((response) => response.json())
-      .then(setGitHubData)
-  );
-
-  useEffect(() => {
-    getGitHubData();
-  }, []);
-
-  const gitHubToken = githubKey.github.apiKey;
-  const gitHubUrl = githubKey.github.url;
-
-  const gitHubActivity = gitHubData ? gitHubData.map(((event) => {
+export const GitHub = (props) => {
+  const gitHubActivity = props.gitHubData ? props.gitHubData.map(((event) => {
     if (event.type === 'PullRequestEvent') {
       const formattedDate = moment(event.created_at).format('MMMM Do, YYYY');
       return <div className="github__action" key={event.id}>

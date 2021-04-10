@@ -7,3 +7,19 @@
 .bold {
   font-weight: bold;
 }
+
+.mb1p {
+  @include respond(phone) {
+    margin-bottom: 1rem;
+  }
+}
+
+.mb25 {
+    margin-bottom: 2.5rem;
+}
+
+.centerp {
+  @include respond(phone) {
+    text-align: center;
+  }
+}

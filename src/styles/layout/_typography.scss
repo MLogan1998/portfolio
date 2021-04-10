@@ -31,7 +31,7 @@
   letter-spacing: .2rem;
 
   @include respond(phone) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -40,4 +40,10 @@
   font-family: 'Montserrat';
   margin-top: 1rem;
   font-size: 1.3rem;
+}
+
+.cursive_heading {
+  font-family: 'Pattaya';
+  color: $primary-green;
+  font-size: 7rem;
 }

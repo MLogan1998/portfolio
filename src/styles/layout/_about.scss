@@ -15,10 +15,10 @@
 }
 
 .button_container {
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   @include respond(phone) {
-    margin: 3.5rem auto 0 auto;
+    margin: 1em auto 0 auto;
   }
 
   &--button:not(:last-child) {
