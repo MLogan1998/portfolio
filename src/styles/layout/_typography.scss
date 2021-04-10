@@ -1,10 +1,8 @@
 .green {
   color: $primary-green;
-  font-weight: bold;
 }
 .white {
   color: white;
-  font-weight: bold;
 }
 
 .text {
@@ -23,4 +21,23 @@
   @include respond(phone) {
     font-size: 3rem;
   }
+}
+
+.secondary_heading {
+  color: $primary-green;
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: .2rem;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+.footer-text {
+  color: white;
+  font-family: 'Montserrat';
+  margin-top: 1rem;
+  font-size: 1.3rem;
 }

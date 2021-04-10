@@ -28,7 +28,7 @@ export const About = () => {
 
   return (
     <animated.div style={props} className="about_container">
-      <p className="text">My name is <span className="green">Matt Logan</span>, I'm a web developer in <span className="green">Nashville, Tennessee</span>. Experienced in <span className="green">JavaScript, React, Python, and Django.</span> Thanks for visiting! Have a look around.</p>
+      <p className="text">My name is <span className="green bold">Matt Logan</span>, I'm a web developer in <span className="green bold">Nashville, Tennessee</span>. Experienced in <span className="green bold">JavaScript, React, Python, and Django.</span> Thanks for visiting! Have a look around.</p>
       <div className="button_container">
         <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
         <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button>

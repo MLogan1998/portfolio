@@ -1,4 +1,8 @@
-  // Media Query Manager
+@mixin noshow {
+  display :none; 
+}
+
+// Media Query Manager
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {

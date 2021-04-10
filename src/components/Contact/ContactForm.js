@@ -19,7 +19,7 @@ export const ContactForm = () => {
   const [state, handleSubmit] = useForm('mleaeode');
   if (state.succeeded) {
     return <div className="success_email">
-              <p className="text"><span className="green">Thank you</span> for reaching out! I look forward to returning your message. Check out the rest of the site.</p>
+              <p className="text"><span className="green bold">Thank you</span> for reaching out! I look forward to returning your message. Check out the rest of the site.</p>
               <div className="button_container">
                 <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
                 <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button>
@@ -31,7 +31,7 @@ export const ContactForm = () => {
     <>
     <div className="form_header">
       <h1 className="primary_heading">Say Hello<span className="white">!</span></h1>
-      <p className="text"><span className="green">Thank you</span> for visiting! Contact me with any comments or questions. I'd <span className="green">love</span> to hear from you! </p>
+      <p className="text"><span className="green bold">Thank you</span> for visiting! Contact me with any comments or questions. I'd <span className="green bold">love</span> to hear from you! </p>
     </div>
     <form className="form" onSubmit={handleSubmit}>
       <div className="form__group">

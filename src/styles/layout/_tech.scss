@@ -1,0 +1,57 @@
+.tech_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+
+.technologies {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  &--icon:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &--icon {
+    font-size: 7rem;
+  }
+}
+
+.git_container {
+  background-color: rgba(99, 98, 98, 0.09);
+  box-shadow: 0 1rem 1rem rgba(0,0,0, .3);
+  width: 30%;
+  padding: 2rem;
+}
+
+.github__action {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+
+
+  &--item {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: .3rem;
+    text-decoration: none;
+  }
+
+  &:nth-child(odd) {
+    background-color: rgba($primary-green, .5)
+  }
+}
+
+.github-link-alt {
+  font-size: 1rem;
+  margin-left: 2rem;
+}
