@@ -62,7 +62,7 @@
     font-family: 'Montserrat';
     overflow: hidden;
     margin-bottom: 0;
-    padding: .3rem;
+    padding: .4rem;
     text-decoration: none;
   }
 
@@ -71,7 +71,7 @@
   }
 
   &:nth-child(odd) {
-    background-color: rgba($primary-green, .5)
+    background-color: #3c4859;
   }
 }
 

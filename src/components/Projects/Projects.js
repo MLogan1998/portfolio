@@ -4,16 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Project } from './Project';
 
-const useStyles = makeStyles({
-  root: {
-    color: '#1de9b6',
-    borderColor: '#1de9b6',
-    fontFamily: 'Montserrat',
-    fontSize: '1.25rem',
-  },
-});
-
-export const Projects = () => {
+export const Projects = (props) => {
   const [loaded, setLoaded] = useState(false);
   const [projects, setProjects] = useState([
     {
@@ -38,16 +29,25 @@ export const Projects = () => {
     },
   ]);
 
+  const useStyles = makeStyles({
+    root: {
+      color: props.color,
+      borderColor: props.color,
+      fontFamily: 'Montserrat',
+      fontSize: '1.25rem',
+    },
+  });
+
   const classes = useStyles();
 
   const setLoad = () => setLoaded(true);
 
-  const createProject = projects && projects.map((project) => <Project key={project.id} project={project} setLoad={setLoad} loaded={loaded} />);
+  const createProject = projects && projects.map((project) => <Project key={project.id} project={project} setLoad={setLoad} loaded={loaded} color={props.color} />);
 
   return (
     <div className="project_main_container" style={ loaded ? {} : { display: 'none' }}>
       <div className="tech_heading">
-        <h1 className="cursive_heading">Featured Projects</h1>
+        <h1 className="cursive_heading" style={{ color: props.color }}>Featured Projects</h1>
           <div className="button_container">
             <Button component={Link} to="/" className={`button_container--button ${classes.root}`} variant="outlined">Home</Button>
             <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button>

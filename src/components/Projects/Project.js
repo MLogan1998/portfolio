@@ -22,11 +22,11 @@ export const Project = (props) => {
         </div>
         <div className="project_content--info">
           <div>
-          <p className="text"><span className="green bold">{props.project.title} </span>{props.project.description}</p>
+          <p className="text"><span className="green bold" style={{ color: props.color }}>{props.project.title} </span>{props.project.description}</p>
           </div>
           <div className="project_content--links">
-            <a href={props.project.repo} target="_blank" rel='noreferrer'><i className="fab fa-github-square green project_content--icon"></i></a>
-            { props.project.isDeployed ? <a href={props.project.link} target="_blank" rel='noreferrer'><i className="fas fa-external-link-alt green project_content--icon"></i></a> : ''}
+            <a href={props.project.repo} target="_blank" rel='noreferrer'><i className="fab fa-github-square green project_content--icon" style={{ color: props.color }}></i></a>
+            { props.project.isDeployed ? <a href={props.project.link} target="_blank" rel='noreferrer'><i className="fas fa-external-link-alt green project_content--icon" style={{ color: props.color }}></i></a> : ''}
           </div>
         </div>
       </div>
