@@ -46,4 +46,7 @@
   font-family: 'Pattaya';
   color: $primary-green;
   font-size: 7rem;
+  @include respond(phone) {
+      font-size: 5rem;
+  }
 }

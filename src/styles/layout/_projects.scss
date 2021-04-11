@@ -1,0 +1,66 @@
+.project_main_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include respond(phone) {
+    height:auto;
+    margin: 15px auto 15px auto;
+  }
+}
+
+.project_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+
+.project {
+  width:35%;
+  margin-bottom: 10rem;
+  display: flex;
+  background-color: rgba(99, 98, 98, 0.09);
+  box-shadow: 0 1rem 1rem rgba(0,0,0, .3);
+  border-radius: 4px;
+  @include respond(phone) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  &_heading {
+    color: $primary-green;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 4rem;
+  }
+
+  &_content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &--info {
+      padding: 15px;
+    }
+
+    &--links {
+      margin-top: 2rem;
+    }
+
+    &--icon {
+      font-size: 3rem;
+      margin-right: 1.2rem;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
