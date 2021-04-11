@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useTransition, animated } from 'react-spring';
 
-export const Logo = () => {
+export const Logo = (props) => {
   const [items, setItems] = useState([
     {
       icon: 'fab fa-linkedin link_container--icon',
@@ -30,9 +30,9 @@ export const Logo = () => {
 
   return (
       <div className="logo_container">
-        <img className="logo" src="https://i.imgur.com/wrupCN7.png" alt="logo" />
+        <div className="logo_image" style={{ border: `9px solid ${props.color}` }} ></div>
         <div className="link_container">
-          {transition((style, item) => <animated.div style={style}><i className={item.icon}></i></animated.div>)}
+          {transition((style, item) => <animated.div style={style}><i className={item.icon} style={{ color: props.color }}></i></animated.div>)}
         </div>
       </div>
   );

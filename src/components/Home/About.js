@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
 import {
   useSpring,
@@ -8,17 +9,17 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles({
-  root: {
-    color: '#1de9b6',
-    borderColor: '#1de9b6',
-    fontFamily: 'Montserrat',
-    fontSize: '1.25rem',
-  },
-});
+export const About = (props) => {
+  const useStyles = makeStyles({
+    root: {
+      color: props.color,
+      borderColor: props.color,
+      fontFamily: 'Montserrat',
+      fontSize: '1.25rem',
+    },
+  });
 
-export const About = () => {
-  const props = useSpring({
+  const props2 = useSpring({
     from: { opacity: 0, x: -500 },
     to: { opacity: 1, x: 0 },
     config: { duration: 400 },
@@ -27,10 +28,10 @@ export const About = () => {
   const classes = useStyles();
 
   return (
-    <animated.div style={props} className="about_container">
+    <animated.div style={props2} className="about_container">
       <div className="mb25">
-      <h1 className="cursive_heading">Hello<span className="white">!</span></h1>
-      <p className="text">My name is <span className="green bold">Matt Logan</span>, I'm a web developer in <span className="green bold">Nashville, Tennessee</span>. Experienced in <span className="green bold">JavaScript, React, Python, and Django.</span> Thanks for visiting! Have a look around.</p>
+      <h1 className="cursive_heading" style={{ color: props.color }}>Hello<span className="white">!</span></h1>
+      <p className="text">My name is <span className="green bold" style={{ color: props.color }}>Matt Logan</span>, I'm a web developer in <span className="green bold" style={{ color: props.color }}>Nashville, Tennessee</span>. Experienced in <span className="green bold" style={{ color: props.color }}>JavaScript, React, Python, and Django.</span> Thanks for visiting! Have a look around.</p>
       </div>
       <div className="button_container">
         <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
