@@ -3,6 +3,6 @@ import React from 'react';
 
 export const ColorPicker = (props) => {
   return (
-    <i class="fas fa-paint-brush" style={{ color: props.color, border: `3px solid ${props.color}` }} onClick={props.randomizeColor}></i>
+    <i className="fas fa-paint-brush picker" style={{ color: props.color, border: `3px solid ${props.color}` }} onClick={props.randomizeColor}></i>
   );
 };

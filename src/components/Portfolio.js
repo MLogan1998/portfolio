@@ -1,4 +1,4 @@
-/* eslint-disable arrow-body-style */
+/* eslint-disable no-bitwise */
 import React, { useState } from 'react';
 import {
   BrowserRouter,
@@ -16,7 +16,7 @@ export const Portfolio = () => {
   const [color, setColor] = useState('#1de9b6');
 
   const randomizeColor = () => {
-    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    const randomColor = '#000000'.replace(/0/g, () => (~~(Math.random() * 16)).toString(16));
     setColor(randomColor);
   };
 
@@ -27,9 +27,15 @@ export const Portfolio = () => {
         <Route exact path="/">
           <Home color={color}/>
         </Route>
-        <Route path="/projects" component={Projects} />
-        <Route path="/tech" component={Tech} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/projects">
+          <Projects color={color} />
+        </Route>
+        <Route path="/tech">
+          <Tech color={color}/>
+        </Route>
+        <Route path="/contact">
+          <Contact color={color} />
+        </Route>
         <Route render={() => <Redirect to="/" />} />
       </Switch>
     </BrowserRouter>
