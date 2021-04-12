@@ -4,6 +4,12 @@
   }
 }
 
+.notab {
+  @include respond(tab-land) {
+    @include noshow
+  }
+}
+
 .bold {
   font-weight: bold;
 }

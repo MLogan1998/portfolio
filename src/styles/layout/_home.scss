@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   height: 100vh;
   
-  @include respond(phone) {
+  @include respond(tab-land) {
     margin-top: 0;
     flex-direction: column-reverse !important;
     height: 100vh;
@@ -16,9 +16,16 @@
   width: 30%;
   margin-right: 10rem;
 
-  @include respond(phone) {
+  @include respond(desk) {
+    width: 40%;
+  }
+
+  @include respond(tab-land) {
     width: 80%;
     margin: 3.5rem auto 0 auto;
+  }
+
+  @include respond(phone) {
     text-align: center;
   }
 }
@@ -33,6 +40,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include respond(desk) {
+    width: 40%;
+  }
 }
 
 .picker {
@@ -43,6 +53,7 @@
  border-radius: 50%;
  padding: 1rem;
  cursor: pointer;
+ box-shadow: 0 1rem 1rem rgba(29, 29, 29, 0.4);
 
  &:hover {
    opacity: .8;
@@ -61,6 +72,11 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+
+  @include respond(tab-port) {
+    width: 300px;
+    height: 300px;
+  }
 
   @include respond(phone) {
     width: 250px;

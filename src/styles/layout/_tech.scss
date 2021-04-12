@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   margin: 0 auto 10rem auto;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
@@ -32,9 +32,13 @@
 
   &--icon {
     font-size: 7rem;
-    
+
+    @include respond(tab-land) {
+      font-size: 4.5rem;
+    }
+
     @include respond(phone) {
-      font-size: 3rem;;
+      font-size: 3rem;
     }
   }
 }
@@ -44,7 +48,16 @@
   box-shadow: 0 1rem 1rem rgba(0,0,0, .3);
   width: 30%;
   padding: 2rem;
-  @include respond(phone) {
+  
+  @include respond(desk) {
+    width: 43%;
+  }
+
+  @include respond(tab-land) {
+    width: 40%;
+  }
+
+  @include respond(tab-port) {
     width: 80%;
   }
 }
@@ -83,9 +96,18 @@
 .technology {
   width: 30%;
   margin-right: 10rem;
-  @include respond(phone) {
-    width: 80%;
+  @include respond(desk) {
+    width: 43%;
+  }
+
+  @include respond(tab-land) {
+    width: 40%;
+  }
+
+  @include respond(tab-port) {
     margin-right: 0rem;
+    margin-bottom: 3rem;
+    width: 80%;
   }
 }
 

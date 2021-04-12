@@ -4,8 +4,6 @@ import './styles/index.scss';
 import { Portfolio } from './components/Portfolio';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Portfolio />
-  </React.StrictMode>,
-  document.getElementById('root'),
+    <Portfolio />,
+    document.getElementById('root'),
 );

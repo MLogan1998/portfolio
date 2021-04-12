@@ -10,7 +10,8 @@ export const Projects = (props) => {
     {
       id: 1,
       title: 'seekr',
-      description: 'is a Tinder-like app made for Junior Developers and employers to match with one another.  Once matched, employers and seekers can chat with one another in real-time.',
+      // eslint-disable-next-line max-len
+      description: 'is a Tinder-like app made for Junior Developers and employers to match with one another.  Once matched, employers and seekers can chat with one another in real-time. The front-end is built with React and the backend was built with Django REST Framework. Real-time chat uses Firebase Firestore.',
       img: 'https://i.imgur.com/WdaN1aM.png',
       isDeployed: false,
       link: '',
@@ -20,7 +21,7 @@ export const Projects = (props) => {
     {
       id: 2,
       title: 'Not The Office Again',
-      description: 'was built for people with an addiction to The Office. Use the random movie generator to find movies featuring your favorite characters from The Office.',
+      description: 'was built for people with an addiction to The Office. Use the random movie generator to find movies featuring your favorite characters from The Office. Add movies to your watchlist, and update as you watch them. N.T.O.A. was built with React, Firebase, Sass, TMDb API.',
       img: 'https://i.imgur.com/6u5bE8K.png',
       isDeployed: true,
       link: 'https://ntoa.logandevelopment.io',
