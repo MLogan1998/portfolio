@@ -48,7 +48,7 @@ export const Projects = (props) => {
   return (
     <div className="project_main_container" style={ loaded ? {} : { display: 'none' }}>
       <div className="tech_heading">
-        <h1 className="cursive_heading" style={{ color: props.color }}>Featured Projects</h1>
+        <h1 className="cursive_heading--projects" style={{ color: props.color }}>Featured Projects</h1>
           <div className="button_container">
             <Button component={Link} to="/" className={`button_container--button ${classes.root}`} variant="outlined">Home</Button>
             <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button>

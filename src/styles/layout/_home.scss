@@ -6,9 +6,8 @@
   height: 100vh;
   
   @include respond(tab-land) {
-    margin-top: 0;
     flex-direction: column-reverse !important;
-    height: 100vh;
+    min-height: 100%;
   }
 }
 
@@ -26,7 +25,9 @@
   }
 
   @include respond(phone) {
+    width: 90%;
     text-align: center;
+    margin-top: 3.5rem;
   }
 }
 
@@ -42,6 +43,9 @@
   align-items: center;
   @include respond(desk) {
     width: 40%;
+  }
+  @include respond(phone) {
+    margin-top: 3rem;
   }
 }
 
@@ -60,7 +64,7 @@
  }
  @include respond(phone) {
   top: 2%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   }
 }
 
@@ -79,7 +83,7 @@
   }
 
   @include respond(phone) {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
   }
 }

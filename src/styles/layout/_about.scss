@@ -18,16 +18,23 @@
   margin-top: 1rem;
 
   @include respond(phone) {
-    margin: 1em auto 0 auto;
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    margin-top: .8rem;
   }
 
   &--button:not(:last-child) {
     margin-right: 1rem;
+
+    @include respond(phone) {
+      margin-right: .75rem !important;
+    }
   }
 
   &--button {
     @include respond(phone) {
-      font-size: 1rem !important;
+      font-size: .95rem !important;
     }
   }
 }

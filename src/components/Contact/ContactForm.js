@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  useSpring,
+  animated,
+  config,
+} from 'react-spring';
 import { useForm, ValidationError } from '@formspree/react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -15,6 +20,12 @@ export const ContactForm = (props) => {
   });
 
   const classes = useStyles();
+
+  const props2 = useSpring({
+    from: { opacity: 0, x: -500, y: 0 },
+    to: { opacity: 1, x: 0, y: 0 },
+    config: { duration: 500 },
+  });
 
   const [state, handleSubmit] = useForm('mleaeode');
   if (state.succeeded) {
@@ -38,6 +49,7 @@ export const ContactForm = (props) => {
     </div>
       <p className="text form_text"><span className="green bold" style={{ color: props.color }}>Thank you</span> for visiting! Contact me with any comments or questions. I'd <span className="green bold" style={{ color: props.color }}>love</span> to hear from you! </p>
     </div>
+    <animated.div style={props2}>
     <form className="form" onSubmit={handleSubmit}>
       <div className="form__group">
         <input id="email" type="email" className="form__input" placeholder="Email Address" name="email" required></input>
@@ -71,6 +83,7 @@ export const ContactForm = (props) => {
         Submit
       </Button>
     </form>
+    </animated.div>
     </>
   );
 };

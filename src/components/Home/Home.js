@@ -6,8 +6,8 @@ import { Logo } from './Logo';
 export const Home = (props) => {
   return (
     <div className="container">
-    <About color={props.color}/>
-    <Logo color={props.color}/>
+      <About color={props.color}/>
+      <Logo color={props.color}/>
     </div>
   );
 };
