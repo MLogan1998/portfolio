@@ -50,7 +50,7 @@ export const ContactForm = (props) => {
       <p className="text form_text"><span className="green bold" style={{ color: props.color }}>Thank you</span> for visiting! Contact me with any comments or questions. I'd <span className="green bold" style={{ color: props.color }}>love</span> to hear from you! </p>
     </div>
     <animated.div style={props2}>
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit} style={{ borderLeft: `13px solid ${props.color}` }}>
       <div className="form__group">
         <input id="email" type="email" className="form__input" placeholder="Email Address" name="email" required></input>
         <label htmlFor="email" className="form__label" style={{ color: props.color }}>Email Address</label>

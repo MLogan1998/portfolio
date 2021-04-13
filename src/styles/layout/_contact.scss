@@ -32,6 +32,10 @@
       width: 80%;
       margin: 0 auto;
     }
+
+    @include respond(phone) {
+      margin-bottom: 8rem;
+    }
   }
 
   &__group:not(:last-child) {

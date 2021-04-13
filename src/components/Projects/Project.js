@@ -16,7 +16,7 @@ export const Project = (props) => {
 
   return (
     <animated.div className="project" style={props2}>
-      <div className="project_content">
+      <div className="project_content" style={{ borderLeft: `13px solid ${props.color}` }} >
         <div className="project_content--image">
           <img src={props.project.img} alt="seekr screenshot" onLoad={props.setLoad} style={props.loaded ? {} : { display: 'none' }}></img>
         </div>

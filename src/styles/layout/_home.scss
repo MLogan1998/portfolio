@@ -9,6 +9,10 @@
     flex-direction: column-reverse !important;
     min-height: 100%;
   }
+  
+  @include respond(phone) {
+    overflow-y: hidden;
+  }
 }
 
 .about_container {

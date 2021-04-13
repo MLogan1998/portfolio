@@ -30,7 +30,7 @@
   margin-bottom: 10rem;
   display: flex;
   background-color: rgba(99, 98, 98, 0.09);
-  box-shadow: 0 1rem 1rem rgba(0,0,0, .3);
+  box-shadow: 0 1rem 1rem rgba(0,0,0, .4);
   border-radius: 4px;
 
   @include respond(desk) {
@@ -60,10 +60,7 @@
     @include respond(tab-land) {
       justify-content: center;
       flex-direction: column;
-    }
-
-    @include respond(phone) {
-      flex-direction: column;
+      border: none !important;
     }
 
     &--info {
