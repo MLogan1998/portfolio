@@ -32,7 +32,7 @@ export const About = (props) => {
       <animated.div style={props2}>
       <div className="mb25">
       <h1 className="cursive_heading" style={{ color: props.color }}>Hello<span className="white">!</span></h1>
-      <p className="text">My name is <span className="green bold" style={{ color: props.color }}>Matt Logan</span>, I'm a web developer in <span className="green bold" style={{ color: props.color }}>Nashville, Tennessee</span>. Experienced in <span className="green bold" style={{ color: props.color }}>JavaScript, React, Python, and Django.</span> Thanks for visiting! Have a look around.</p>
+      <p className="text">My name is <span className="green bold" style={{ color: props.color }}>Matt Logan</span>, I'm a web developer in <span className="green bold" style={{ color: props.color }}>Nashville, Tennessee</span>. I'm well-versed in <span className="green bold" style={{ color: props.color }}>JavaScript, React, Python, and Django.</span> Thanks for visiting! Have a look around.</p>
       </div>
       </animated.div>
       <div className="button_container">
