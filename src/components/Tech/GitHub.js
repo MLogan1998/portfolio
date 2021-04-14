@@ -14,7 +14,7 @@ export const GitHub = (props) => {
   })) : '';
 
   return (
-      <div className="git_container">
+      <div className="git_container" style={{ borderLeft: `13px solid ${props.color}` }}>
         <h1 className="secondary_heading" style={{ color: props.color }}>Recent Pull Requests</h1>
         {gitHubActivity}
         <p className="footer-text"><span style={{ color: props.color }}>*</span> Data pulled from GitHub API</p>
