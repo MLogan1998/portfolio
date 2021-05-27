@@ -32,12 +32,12 @@ export const About = (props) => {
       <animated.div style={props2}>
       <div className="mb25">
       <h1 className="cursive_heading" style={{ color: props.color }}>Hello<span className="white">!</span></h1>
-      <p className="text">My name is <span className="green bold" style={{ color: props.color }}>Matt Logan</span>, I'm a web developer in <span className="green bold" style={{ color: props.color }}>Nashville, Tennessee</span>. I'm well-versed in <span className="green bold" style={{ color: props.color }}>JavaScript, React, Python, and Django.</span> I am currently a TA at <span className="green bold" style={{ color: props.color }}>Nashville Software School</span> helping students learn the fundamentals of HTML, CSS, and JavaScript. Thanks for visiting! Have a look around.</p>
+      <p className="text">My name is <span className="green bold" style={{ color: props.color }}>Matt Logan</span>, I'm a web developer in <span className="green bold" style={{ color: props.color }}>Nashville, Tennessee</span> focussed in <span className="green bold" style={{ color: props.color }}>JavaScript</span> and <span className="green bold" style={{ color: props.color }}>Python</span>. Thanks for visiting!</p>
       </div>
       </animated.div>
       <div className="button_container">
-        <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
-        <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button>
+        {/* <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
+        <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button> */}
         <Button component={Link} to="/contact" className={`button_container--button ${classes.root}`} variant="outlined">Contact</Button>
       </div>
     </div>
