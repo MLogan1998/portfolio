@@ -44,8 +44,8 @@ export const ContactForm = (props) => {
       <h1 className="cursive_heading" style={{ color: props.color }}>Say Hello<span className="white">!</span></h1>
       <div className="button_container">
             <Button component={Link} to="/" className={`button_container--button ${classes.root}`} variant="outlined">Home</Button>
-            <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
-            <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button>
+            {/* <Button component={Link} to="/projects" className={`button_container--button ${classes.root}`} variant="outlined">Projects</Button>
+            <Button component={Link} to="/tech" className={`button_container--button ${classes.root}`} variant="outlined">Tech Stack</Button> */}
     </div>
       <p className="text form_text"><span className="green bold" style={{ color: props.color }}>Thank you</span> for visiting! Contact me with any comments or questions. I'd <span className="green bold" style={{ color: props.color }}>love</span> to hear from you! </p>
     </div>

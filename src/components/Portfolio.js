@@ -7,8 +7,8 @@ import {
   Redirect,
 } from 'react-router-dom';
 import { Home } from './Home/Home';
-import { Projects } from './Projects/Projects';
-import { Tech } from './Tech/Tech';
+// import { Projects } from './Projects/Projects';
+// import { Tech } from './Tech/Tech';
 import { Contact } from './Contact/Contact';
 import { ColorPicker } from './Theme/ColorPicker';
 
@@ -27,12 +27,12 @@ export const Portfolio = () => {
         <Route exact path="/">
           <Home color={color}/>
         </Route>
-        <Route path="/projects">
+        {/* <Route path="/projects">
           <Projects color={color} />
         </Route>
         <Route path="/tech">
           <Tech color={color}/>
-        </Route>
+        </Route> */}
         <Route path="/contact">
           <Contact color={color} />
         </Route>

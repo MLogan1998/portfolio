@@ -16,12 +16,12 @@ export const Logo = (props) => {
       delay: 800,
       link: 'https://github.com/MLogan1998',
     },
-    {
-      icon: 'fas fa-file-pdf link_container--icon',
-      x: 20,
-      delay: 600,
-      link: 'https://drive.google.com/file/d/1RanDUQV2FY83wIFpVoUUh6AFwmQYnHMT/view?usp=sharing',
-    },
+    // {
+    //   icon: 'fas fa-file-pdf link_container--icon',
+    //   x: 20,
+    //   delay: 600,
+    //   link: 'https://drive.google.com/file/d/1RanDUQV2FY83wIFpVoUUh6AFwmQYnHMT/view?usp=sharing',
+    // },
   ]);
 
   const transition = useTransition(items, {
